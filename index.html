@@ -1,0 +1,928 @@
+<!DOCTYPE html>
+<html lang="bs">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Škaljić Interior | Premium Pločasti Namještaj</title>
+    <meta name="description" content="Vaša vizija, naš dizajn - ekskluzivni pločasti namještaj po mjeri">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/gallery.css">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+
+<body>
+    <!-- Preloader -->
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="preloader-content">
+            <img src="img/logotra.png" alt="Your Logo" class="preloader-logo">
+            <div class="preloader-spinner">
+                <div class="spinner-line"></div>
+                <div class="spinner-line"></div>
+                <div class="spinner-line"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cursor Effect -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container-fluid">
+            <div class="navbar-container">
+                <!-- Logo -->
+                <a href="#" class="logo" data-cursor-scale>
+                    <img src="img/logotra.png" alt="Škaljić Interior Logo" class="logo-img">
+                </a>
+
+                <!-- Main Navigation -->
+                <div class="nav-main">
+                    <ul class="nav-links">
+                        <li class="nav-item" data-cursor-scale>
+                            <a href="#" class="nav-link active">
+                                <span class="link-text">Početna</span>
+                                <span class="link-hover"></span>
+                            </a>
+                        </li>
+                        <li class="nav-item" data-cursor-scale>
+                            <a href="#about" class="nav-link">
+                                <span class="link-text">O Nama</span>
+                                <span class="link-hover"></span>
+                            </a>
+                        </li>
+                        <li class="nav-item" data-cursor-scale>
+                            <a href="#usluge" class="nav-link">
+                                <span class="link-text">Usluge</span>
+                                <span class="link-hover"></span>
+                            </a>
+                        </li>
+                        <li class="nav-item" data-cursor-scale>
+                            <a href="#galerija" class="nav-link">
+                                <span class="link-text">Galerija</span>
+                                <span class="link-hover"></span>
+                            </a>
+                        </li>
+                        <li class="nav-item" data-cursor-scale>
+                            <a href="#kontakt" class="nav-link">
+                                <span class="link-text">Kontakt</span>
+                                <span class="link-hover"></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Right Side Elements -->
+                <div class="nav-right">
+                    <!-- Language Switcher -->
+                    <div class="language-switcher" data-cursor-scale>
+                        <button class="lang-btn" data-lang="bs">BS</button>
+                        <span class="lang-divider">/</span>
+                        <button class="lang-btn" data-lang="de">DE</button>
+                        <span class="lang-divider">/</span>
+                        <button class="lang-btn" data-lang="en">EN</button>
+                    </div>
+
+                    <!-- Contact Button -->
+                    <a href="#kontakt" class="nav-contact" data-cursor-scale>
+                        <span>Kontaktirajte nas</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+
+                    <!-- Mobile Menu Toggle -->
+                    <div class="nav-toggle" id="navToggle" data-cursor-scale>
+                        <span class="toggle-line"></span>
+                        <span class="toggle-line"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <div class="mobile-menu-container">
+            <ul class="mobile-nav-links">
+                <li class="mobile-nav-item">
+                    <a href="#" class="mobile-nav-link active">
+                        <span>Početna</span>
+                        <i class="fas fa-chevron-right"></i>
+                    </a>
+                </li>
+                <li class="mobile-nav-item">
+                    <a href="#" class="mobile-nav-link">
+                        <span>O Nama</span>
+                        <i class="fas fa-chevron-right"></i>
+                    </a>
+                </li>
+                <li class="mobile-nav-item">
+                    <a href="#usluge" class="mobile-nav-link">
+                        <span>Usluge</span>
+                        <i class="fas fa-chevron-right"></i>
+                    </a>
+                </li>
+                <li class="mobile-nav-item">
+                    <a href="#galerija" class="mobile-nav-link">
+                        <span>Galerija</span>
+                        <i class="fas fa-chevron-right"></i>
+                    </a>
+                </li>
+                <li class="mobile-nav-item">
+                    <a href="#kontakt" class="mobile-nav-link">
+                        <span>Kontakt</span>
+                        <i class="fas fa-chevron-right"></i>
+                    </a>
+                </li>
+            </ul>
+
+            <div class="mobile-menu-footer">
+                <div class="mobile-language-switcher">
+                    <button class="mobile-lang-btn active" data-lang="bs">Bosanski</button>
+                    <button class="mobile-lang-btn" data-lang="de">Deutsch</button>
+                    <button class="mobile-lang-btn" data-lang="en">English</button>
+                </div>
+
+                <div class="mobile-social-links">
+                    <a href="#" class="mobile-social-link" data-cursor-scale>
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://www.facebook.com/skaljicinterior" class="mobile-social-link" data-cursor-scale>
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/tarik-%C5%A1kalji%C4%87-033a06325/" class="mobile-social-link"
+                        data-cursor-scale target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-slider swiper">
+            <div class="swiper-wrapper">
+                <!-- Slide 1 -->
+                <div class="hero-slide swiper-slide">
+                    <div class="slide-bg" style="background-image: url('/img/poz.jpg')"></div>
+                    <div class="container-fluid">
+                        <div class="hero-content">
+                            <div class="hero-subtitle" data-swiper-parallax="-300">
+                                <span>Premium dizajn</span>
+                            </div>
+                            <h1 class="hero-title" data-swiper-parallax="-500">
+                                <span class="title-line"><span>Vaša vizija,</span></span>
+                                <span class="title-line"><span>naš dizajn</span></span>
+                            </h1>
+                            <div class="hero-text" data-swiper-parallax="-700">
+                                <p>Škaljić Interior kreira ekskluzivni pločasti namještaj po vašoj mjeri, kombinirajući
+                                    vrhunski dizajn sa preciznom izradom.</p>
+                            </div>
+                            <div class="hero-buttons" data-swiper-parallax="-900">
+                                <a href="#" class="btn btn-primary" data-cursor-scale>
+                                    <span>O nama</span>
+                                    <i class="fas fa-arrow-right"></i>
+                                </a>
+                                <a href="#" class="btn btn-outline" data-cursor-scale>
+                                    <span>Usluge</span>
+                                    <i class="fas fa-play"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="hero-slide swiper-slide">
+                    <div class="slide-bg" style="background-image: url('img/poz2.jpg')"></div>
+                    <div class="container-fluid">
+                        <div class="hero-content">
+                            <div class="hero-subtitle" data-swiper-parallax="-300">
+                                <span>Luksuzna izrada</span>
+                            </div>
+                            <h1 class="hero-title" data-swiper-parallax="-500">
+                                <span class="title-line"><span>Savršenstvo u</span></span>
+                                <span class="title-line"><span>svakom detalju</span></span>
+                            </h1>
+                            <div class="hero-text" data-swiper-parallax="-700">
+                                <p>Svaki komad namještaja Škaljić Interiora je ručno izrađen sa pažnjom prema svakom
+                                    detalju, koristeći samo najkvalitetnije materijale.</p>
+                            </div>
+                            <div class="hero-buttons" data-swiper-parallax="-900">
+                                <a href="#" class="btn btn-primary" data-cursor-scale>
+                                    <span>Kako radimo</span>
+                                    <i class="fas fa-arrow-right"></i>
+                                </a>
+                                <a href="#" class="btn btn-outline" data-cursor-scale>
+                                    <span>Kontakt</span>
+                                    <i class="fas fa-box-open"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slider Controls -->
+            <div class="hero-slider-controls">
+                <div class="swiper-pagination"></div>
+                <div class="swiper-nav">
+                    <div class="swiper-button-prev">
+                        <i class="fas fa-chevron-left"></i>
+                    </div>
+                    <div class="swiper-button-next">
+                        <i class="fas fa-chevron-right"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Hero Scroll Indicator -->
+        <div class="hero-scroll-indicator">
+            <div class="scroll-text">Scroll</div>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+    <section class="about-section" id="about">
+        <div class="container">
+            <!-- Dekorativni elementi -->
+            <div class="about-decoration about-dots"></div>
+            <div class="about-decoration about-line"></div>
+            <div class="premium-text-block" data-aos="fade-up" data-aos-delay="200">
+                <div class="text-reveal-container">
+                    <p class="premium-lead-text">
+                        <span class="text-line">
+                            <span class="text-mask">Dragi naši, dobrodošli u svijet elegancije i udobnosti!</span>
+                        </span>
+                        <span class="text-line">
+                            <span class="text-mask">Škaljić Interior je vaša destinacija za beskrajne</span>
+                        </span>
+                        <span class="text-line">
+                            <span class="text-mask">mogućnosti uređenja doma.</span>
+                        </span>
+                    </p>
+
+
+                    <svg width="120" height="12" viewBox="0 0 120 12" fill="none" preserveAspectRatio="none">
+                        <path d="M0 6H120" stroke="url(#gold-gradient)" stroke-width="2" stroke-dasharray="15 5"
+                            stroke-linecap="round" />
+                    </svg>
+                    <svg width="0" height="0">
+                        <linearGradient id="gold-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                            <stop offset="0%" stop-color="#c8a97e" stop-opacity="0" />
+                            <stop offset="50%" stop-color="#c8a97e" />
+                            <stop offset="100%" stop-color="#c8a97e" stop-opacity="0" />
+                        </linearGradient>
+                    </svg>
+                </div>
+            </div>
+        </div>
+
+        <div class="about-services" data-aos="fade-left">
+            <div class="services-grid">
+                <!-- Kartica 1 -->
+                <div class="service-card-v3">
+                    <div class="card-icon-wrapper">
+                        <div class="card-icon-circle">
+                            <i class="fas fa-pencil-ruler"></i>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Dizajn enterijera</h3>
+                        <p class="card-description">Kompletan dizajn enterijera po vašim željama i potrebama</p>
+                        <a href="#" class="card-link">
+                            <span>Saznajte više</span>
+                            <div class="link-arrow">
+                                <i class="fas fa-arrow-right"></i>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card-decoration"></div>
+                </div>
+
+                <!-- Kartica 2 -->
+                <div class="service-card-v3">
+                    <div class="card-icon-wrapper">
+                        <div class="card-icon-circle">
+                            <i class="fas fa-couch"></i>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Pločasti namještaj</h3>
+                        <p class="card-description">Premium izrada pločastog namještaja po mjeri</p>
+                        <a href="#" class="card-link">
+                            <span>Saznajte više</span>
+                            <div class="link-arrow">
+                                <i class="fas fa-arrow-right"></i>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card-decoration"></div>
+                </div>
+
+                <!-- Kartica 3 -->
+                <div class="service-card-v3">
+                    <div class="card-icon-wrapper">
+                        <div class="card-icon-circle">
+                            <i class="fas fa-cube"></i>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">3D vizuelizacija</h3>
+                        <p class="card-description">Realistična 3D vizuelizacija enterijera prije izrade</p>
+                        <a href="#" class="card-link">
+                            <span>Saznajte više</span>
+                            <div class="link-arrow">
+                                <i class="fas fa-arrow-right"></i>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card-decoration"></div>
+                </div>
+
+                <!-- Kartica 4 -->
+                <div class="service-card-v3">
+                    <div class="card-icon-wrapper">
+                        <div class="card-icon-circle">
+                            <i class="fas fa-tools"></i>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Izrada i montaža</h3>
+                        <p class="card-description">Kompletan proces izrade i montaže pločastog namještaja</p>
+                        <a href="#" class="card-link">
+                            <span>Saznajte više</span>
+                            <div class="link-arrow">
+                                <i class="fas fa-arrow-right"></i>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card-decoration"></div>
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+        <div class="yysection-decoration">
+            <div class="yydots-pattern"></div>
+            <div class="yyline-decoration"></div>
+        </div>
+        <div class="yytitle-divider">
+        </div>
+    </section>
+
+    <!-- Rad -->
+    <section class="yysection-process" id="yyproces-izrade">
+        <div class="yycontainer">
+            <div class="yysection-header" data-aos="yyfade-up">
+                <span class="yysection-subtitle">Naš kreativni proces</span>
+                <h2 class="yysection-title">Kako <span>radimo</span></h2>
+                <div class="yytitle-divider">
+                    <svg width="150" height="8" viewBox="0 0 150 8" fill="none">
+                        <path d="M0 4H150" stroke="#C8A97E" stroke-width="2" stroke-dasharray="10 5" />
+                    </svg>
+                </div>
+            </div>
+
+            <div class="yyprocess-steps">
+                <!-- Korak 1 -->
+                <div class="yyprocess-step" data-aos="yyfade-up" data-aos-delay="100">
+                    <div class="yystep-number">01</div>
+                    <div class="yystep-icon">
+                        <i class="fas fa-phone-alt"></i>
+                    </div>
+                    <div class="yystep-content">
+                        <h3>Kontaktirajte nas</h3>
+                        <p>Inicijalni razgovor o vašim potrebama i željama za namještaj</p>
+                    </div>
+                    <div class="yystep-arrow">
+                        <i class="fas fa-chevron-right"></i>
+                    </div>
+                </div>
+
+                <!-- Korak 2 -->
+                <div class="yyprocess-step" data-aos="yyfade-up" data-aos-delay="150">
+                    <div class="yystep-number">02</div>
+                    <div class="yystep-icon">
+                        <i class="fas fa-ruler-combined"></i>
+                    </div>
+                    <div class="yystep-content">
+                        <h3>Dolazak na mjerenje</h3>
+                        <p>Precizno mjerenje prostora i konsultacije na licu mjesta</p>
+                    </div>
+                    <div class="yystep-arrow">
+                        <i class="fas fa-chevron-right"></i>
+                    </div>
+                </div>
+
+                <!-- Korak 3 -->
+                <div class="yyprocess-step" data-aos="yyfade-up" data-aos-delay="200">
+                    <div class="yystep-number">03</div>
+                    <div class="yystep-icon">
+                        <i class="fas fa-pencil-ruler"></i>
+                    </div>
+                    <div class="yystep-content">
+                        <h3>Dizajn po mjeri</h3>
+                        <p>Kreiranje 3D vizualizacije i finalizacija detalja</p>
+                    </div>
+                    <div class="yystep-arrow">
+                        <i class="fas fa-chevron-right"></i>
+                    </div>
+                </div>
+
+                <!-- Korak 4 -->
+                <div class="yyprocess-step" data-aos="yyfade-up" data-aos-delay="250">
+                    <div class="yystep-number">04</div>
+                    <div class="yystep-icon">
+                        <i class="fas fa-hammer"></i>
+                    </div>
+                    <div class="yystep-content">
+                        <h3>Izrada i montaža</h3>
+                        <p>Ručna izrada odabranih materijala i profesionalna montaža</p>
+                    </div>
+                    <div class="yystep-arrow">
+                        <i class="fas fa-chevron-right"></i>
+                    </div>
+                </div>
+
+                <!-- Korak 5 -->
+                <div class="yyprocess-step" data-aos="yyfade-up" data-aos-delay="300">
+                    <div class="yystep-number">05</div>
+                    <div class="yystep-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <div class="yystep-content">
+                        <h3>Garancija i podrška</h3>
+                        <p>Višegodišnja garancija i stručna podrška nakon isporuke</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="yysection-decoration">
+            <div class="yydots-pattern"></div>
+            <div class="yyline-decoration"></div>
+        </div>
+        <div class="yytitle-divider">
+        </div>
+    </section>
+    <!-- Usluge -->
+    <section class="ysection-production" id="usluge">
+        <div class="ycontainer">
+            <div class="ysection-header" data-aos="yfade-up">
+                <h2 class="ysection-title">Naše <span>usluge</span></h2>
+                <div class="ytitle-divider">
+                    <svg width="120" height="8" viewBox="0 0 120 8" fill="none">
+                        <path d="M0 4H120" stroke="#C8A97E" stroke-width="2" stroke-dasharray="8 4" />
+                    </svg>
+                </div>
+            </div>
+
+            <div class="yproduction-grid">
+                <!-- Kuhinje po mjeri -->
+                <div class="yproduction-item" data-aos="yfade-up" data-aos-delay="100">
+                    <div class="yitem-inner">
+                        <div class="yitem-icon">
+                            <i class="fas fa-utensils"></i>
+                        </div>
+                        <div class="yitem-content">
+                            <h3>Kuhinje po mjeri</h3>
+                            <p>Premium kuhinje rađene po individualnim merama sa funkcionalnim detaljima i vrhunskim
+                                materijalima</p>
+                        </div>
+                        <div class="yitem-decoration"></div>
+                        <a href="#" class="yitem-link">Saznajte više</a>
+                    </div>
+                </div>
+
+                <!-- Ugradbeni plakari -->
+                <div class="yproduction-item" data-aos="yfade-up" data-aos-delay="150">
+                    <div class="yitem-inner">
+                        <div class="yitem-icon">
+                            <i class="fas fa-tshirt"></i>
+                        </div>
+                        <div class="yitem-content">
+                            <h3>Ugradbeni plakari</h3>
+                            <p>Elegantna i funkcionalna rešenja za skladištenje koja maksimalno koriste raspoloživi
+                                prostor</p>
+                        </div>
+                        <div class="yitem-decoration"></div>
+                        <a href="#" class="yitem-link">Saznajte više</a>
+                    </div>
+                </div>
+
+                <!-- Komode i ormari -->
+                <div class="yproduction-item" data-aos="yfade-up" data-aos-delay="200">
+                    <div class="yitem-inner">
+                        <div class="yitem-icon">
+                            <i class="fas fa-archive"></i>
+                        </div>
+                        <div class="yitem-content">
+                            <h3>Komode i ormari</h3>
+                            <p>Klasični i moderni dizajni koji kombinuju praktičnost i estetsku savršenost</p>
+                        </div>
+                        <div class="yitem-decoration"></div>
+                        <a href="#" class="yitem-link">Saznajte više</a>
+                    </div>
+                </div>
+
+                <!-- Kancelarijski namještaj -->
+                <div class="yproduction-item" data-aos="yfade-up" data-aos-delay="250">
+                    <div class="yitem-inner">
+                        <div class="yitem-icon">
+                            <i class="fas fa-briefcase"></i>
+                        </div>
+                        <div class="yitem-content">
+                            <h3>Kancelarijski namještaj</h3>
+                            <p>Ergonomska rešenja koja podižu produktivnost i stvaraju profesionalni ambijent</p>
+                        </div>
+                        <div class="yitem-decoration"></div>
+                        <a href="#" class="yitem-link">Saznajte više</a>
+                    </div>
+                </div>
+
+                <!-- Dječije sobe -->
+                <div class="yproduction-item" data-aos="yfade-up" data-aos-delay="300">
+                    <div class="yitem-inner">
+                        <div class="yitem-icon">
+                            <i class="fas fa-child"></i>
+                        </div>
+                        <div class="yitem-content">
+                            <h3>Dječije sobe</h3>
+                            <p>Sigurni i kreativni prostori koji inspirišu maštu i rast najmlađih</p>
+                        </div>
+                        <div class="yitem-decoration"></div>
+                        <a href="#" class="yitem-link">Saznajte više</a>
+                    </div>
+                </div>
+
+                <!-- Spavaće sobe -->
+                <div class="yproduction-item" data-aos="yfade-up" data-aos-delay="350">
+                    <div class="yitem-inner">
+                        <div class="yitem-icon">
+                            <i class="fas fa-bed"></i>
+                        </div>
+                        <div class="yitem-content">
+                            <h3>Spavaće sobe</h3>
+                            <p>Oaze mira i udobnosti sa premium materijalima i pažljivo osmišljenim detaljima</p>
+                        </div>
+                        <div class="yitem-decoration"></div>
+                        <a href="#" class="yitem-link">Saznajte više</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="ysection-decoration">
+            <div class="ydots-pattern"></div>
+            <div class="yline-decoration"></div>
+        </div>
+    </section>
+    <!-- Gallery Section -->
+    <section class="dsection-gallery" id="galerija">
+        <div class="dcontainer">
+            <div class="dsection-header">
+                <span class="dsection-subtitle">Naši radovi</span>
+                <h2 class="dsection-title">Galerija <span class="text-gold">projekata</span></h2>
+                <div class="dtitle-divider">
+                    <svg width="180" height="10" viewBox="0 0 180 10" fill="none">
+                        <path d="M0 5H180" stroke="var(--color-secondary)" stroke-width="2" stroke-dasharray="12 6" />
+                    </svg>
+                </div>
+            </div>
+
+            <!-- Gallery Filter -->
+            <div class="dgallery-filter">
+                <button class="dfilter-btn active" data-filter="all">Sve Kategorije</button>
+                <button class="dfilter-btn" data-filter="kuhinje">Kuhinje</button>
+                <button class="dfilter-btn" data-filter="kupatila">Kupatila</button>
+                <button class="dfilter-btn" data-filter="ormari">Ormari</button>
+                <button class="dfilter-btn" data-filter="dekor">Dekor</button>
+                <button class="dfilter-btn" data-filter="stepenista">Stepeništa</button>
+            </div>
+
+            <!-- Gallery Grid -->
+            <div class="dgallery-grid">
+                <!-- Kuhinje Category -->
+                <div class="dgallery-item" data-category="kuhinje">
+                    <div class="dimage-wrapper">
+                        <img src="img/kuhinja2.jpg" alt="Premium kuhinja" loading="lazy" class="dgallery-image">
+                        <div class="dimage-overlay">
+                            <div class="doverlay-content">
+                                <h3>Luksuzna kuhinja</h3>
+                                <p>Drveni elementi sa premium finishom</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ditem-badge">Popularno</div>
+                </div>
+
+                <div class="dgallery-item" data-category="kuhinje">
+                    <div class="dimage-wrapper">
+                        <img src="img/kuhinja3.jpeg" alt="Modern kuhinja" loading="lazy" class="dgallery-image">
+                        <div class="dimage-overlay">
+                            <div class="doverlay-content">
+                                <h3>Moderna kuhinja</h3>
+                                <p>Minimalistički dizajn</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="dgallery-item" data-category="kuhinje">
+                    <div class="dimage-wrapper">
+                        <img src="img/kuhinja4.jpeg" alt="Modern kuhinja" loading="lazy" class="dgallery-image">
+                        <div class="dimage-overlay">
+                            <div class="doverlay-content">
+                                <h3>Moderna kuhinja</h3>
+                                <p>Minimalistički dizajn</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="dgallery-item" data-category="kuhinje">
+                    <div class="dimage-wrapper">
+                        <img src="img/kuhinja5.jpeg" alt="Modern kuhinja" loading="lazy" class="dgallery-image">
+                        <div class="dimage-overlay">
+                            <div class="doverlay-content">
+                                <h3>Moderna kuhinja</h3>
+                                <p>Minimalistički dizajn</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Kupatila Category -->
+                <div class="dgallery-item" data-category="kupatila">
+                    <div class="dimage-wrapper">
+                        <img src="img/kupaona.jpg" alt="Premium kupaona" loading="lazy" class="dgallery-image">
+                        <div class="dimage-overlay">
+                            <div class="doverlay-content">
+                                <h3>Luksuzno kupatilo</h3>
+                                <p>Drvena obrada</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Ormari Category -->
+                <div class="dgallery-item" data-category="ormari">
+                    <div class="dimage-wrapper">
+                        <img src="img/ormar.jpg" alt="Ugradbeni ormar" loading="lazy" class="dgallery-image">
+                        <div class="dimage-overlay">
+                            <div class="doverlay-content">
+                                <h3>Ormar</h3>
+                                <p>Prilagođen prostoru</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dgallery-item" data-category="ormari">
+                    <div class="dimage-wrapper">
+                        <img src="img/ormar2.jpeg" alt="Ugradbeni ormar" loading="lazy" class="dgallery-image">
+                        <div class="dimage-overlay">
+                            <div class="doverlay-content">
+                                <h3>Ormar</h3>
+                                <p>Prilagođen prostoru</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="dgallery-item" data-category="ormari">
+                    <div class="dimage-wrapper">
+                        <img src="img/ormar3.jpeg" alt="Ugradbeni ormar" loading="lazy" class="dgallery-image">
+                        <div class="dimage-overlay">
+                            <div class="doverlay-content">
+                                <h3>Ormar</h3>
+                                <p>Prilagođen prostoru</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Dekor Category -->
+                <div class="dgallery-item" data-category="dekor">
+                    <div class="dimage-wrapper">
+                        <img src="img/tv.jpg" alt="Drveni paneli" loading="lazy" class="dgallery-image">
+                        <div class="dimage-overlay">
+                            <div class="doverlay-content">
+                                <h3>Drveni paneli</h3>
+                                <p>Dekorativna obrada zida</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Stepenista Category -->
+                <div class="dgallery-item" data-category="stepenista">
+                    <div class="dimage-wrapper">
+                        <img src="img/stepeniste.jpg" alt="Drveno stepenište" loading="lazy" class="dgallery-image">
+                        <div class="dimage-overlay">
+                            <div class="doverlay-content">
+                                <h3>Drveno stepenište</h3>
+                                <p>Ručno rađeni detalji</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ditem-badge">Novo</div>
+                </div>
+            </div>
+
+            <!-- Load More Button -->
+            <div class="dload-more-container">
+                <button class="dload-more-btn">Učitaj još projekata</button>
+            </div>
+        </div>
+
+        <!-- Fullscreen Image Viewer -->
+        <div class="dfullscreen-viewer">
+            <span class="dclose-btn">&times;</span>
+            <img class="dfullscreen-image" src="" alt="">
+            <div class="dimage-caption"></div>
+            <div class="dimage-nav">
+                <button class="dnav-btn dprev-btn">&#10094;</button>
+                <button class="dnav-btn dnext-btn">&#10095;</button>
+            </div>
+        </div>
+
+        <!-- Section Decoration -->
+        <div class="dsection-decoration">
+            <div class="ddots-pattern"></div>
+            <div class="dline-decoration"></div>
+        </div>
+    </section>
+    <!--Kontakt -->
+    <section class="yyysection-contact" id="kontakt">
+        <div class="yyycontainer">
+            <div class="yyysection-header">
+                <span class="yyysection-subtitle">Kontaktirajte nas</span>
+                <h2 class="yyysection-title">Pločasti namještaj <span>po mjeri!</span></h2>
+                <div class="yyytitle-divider">
+                    <svg width="180" height="10" viewBox="0 0 180 10" fill="none">
+                        <path d="M0 5H180" stroke="#C8A97E" stroke-width="2" stroke-dasharray="12 6" />
+                    </svg>
+                </div>
+            </div>
+
+            <div class="yyycontact-grid">
+                <div class="yyycontact-info">
+                    <div class="yyyinfo-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <h3>Telefon</h3>
+                        <a href="tel:+387603539788">060 35 39 788</a>
+                    </div>
+                    <div class="yyyinfo-item">
+                        <i class="fas fa-envelope"></i>
+                        <h3>Email</h3>
+                        <a href="mailto:skaljicinterior@gmail.com">skaljicinterior@gmail.com</a>
+                    </div>
+                    <div class="yyyinfo-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h3>Lokacija</h3>
+                        <p>Zmaj od Bosne, Buzim, Bosnia and Herzegovina</p>
+                    </div>
+                    <div class="yyyinfo-item">
+                        <i class="fas fa-lightbulb"></i>
+                        <h3>Moto</h3>
+                        <p>Vaša vizija, naš dizajn!</p>
+                    </div>
+                </div>
+
+                <div class="yyycontact-form">
+                    <form id="yyycontactForm" action="sendmail.php" method="POST">
+                        <div class="yyyform-group">
+                            <input type="text" name="name" id="name" required>
+                            <label for="name">Ime i prezime*</label>
+                        </div>
+                        <div class="yyyform-group">
+                            <input type="email" name="email" id="email" required>
+                            <label for="email">Email adresa*</label>
+                        </div>
+                        <div class="yyyform-group">
+                            <input type="tel" name="phone" id="phone">
+                            <label for="phone">Telefon</label>
+                        </div>
+                        <div class="yyyform-group">
+                            <textarea name="message" id="message" rows="5" required></textarea>
+                            <label for="message">Poruka*</label>
+                        </div>
+                        <input type="hidden" id="g-recaptcha-response" name="g-recaptcha-response">
+                        <button type="submit" class="yyyform-button">
+                            <span>Pošalji poruku</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                        <div class="yyyform-status"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="yysection-decoration">
+            <div class="yydots-pattern"></div>
+            <div class="yyline-decoration"></div>
+        </div>
+        <div class="yytitle-divider">
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="zzzsection-footer">
+        <div class="zzzfooter-top-border"></div> <!-- Dodana linija iznad footera -->
+        <div class="zzzfooter-wave">
+            <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path
+                    d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"
+                    opacity=".25" fill="#c8a97e"></path>
+                <path
+                    d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z"
+                    opacity=".5" fill="#c8a97e"></path>
+                <path
+                    d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z"
+                    fill="#c8a97e"></path>
+            </svg>
+        </div>
+
+        <div class="zzzcontainer">
+            <div class="zzzfooter-grid">
+                <div class="zzzfooter-col zzzfooter-about">
+                    <div class="zzzfooter-logo">
+                        <span class="zzzlogo-text">ŠKALJIĆ INTERIOR</span>
+                        <span class="zzzlogo-dot">.</span>
+                    </div>
+                    <p class="zzzfooter-about-text">
+                        Premium pločasti namještaj po mjeri. Vaša vizija, naš dizajn - zajedno stvaramo savršene
+                        prostore.
+                    </p>
+                    <div class="zzzsocial-links">
+                        <a href="https://www.instagram.com/skaljicinterior/" class="zzzsocial-link" data-cursor-scale><i
+                                class="fab fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/skaljicinterior" class="zzzsocial-link" data-cursor-scale><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.linkedin.com/in/tarik-%C5%A1kalji%C4%87-033a06325/" class="zzzsocial-link"
+                            data-cursor-scale target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+                <div class="zzzfooter-col zzzfooter-links">
+                    <h3 class="zzzfooter-title">Brzi linkovi</h3>
+                    <ul class="zzzfooter-list">
+                        <li><a href="#">Početna</a></li>
+                        <li><a href="#about">O Nama</a></li>
+                        <li><a href="#usluge">Usluge</a></li>
+                        <li><a href="#galerija">Galerija</a></li>
+                        <li><a href="#kontakt">Kontakt</a></li>
+                    </ul>
+                </div>
+
+                <div class="zzzfooter-col zzzfooter-services">
+                    <h3 class="zzzfooter-title">Usluge</h3>
+                    <ul class="zzzfooter-list">
+                        <li><a href="#">Kuhinje po mjeri</a></li>
+                        <li><a href="#">Ugradbeni plakari</a></li>
+                        <li><a href="#">Spavaće sobe</a></li>
+                        <li><a href="#">Dječije sobe</a></li>
+                        <li><a href="#">Kancelarijski namještaj</a></li>
+                    </ul>
+                </div>
+
+                <div class="zzzfooter-col zzzfooter-contact">
+                    <h3 class="zzzfooter-title">Kontakt</h3>
+                    <ul class="zzzfooter-contact-list">
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Zmaj od Bosne, Buzim, BiH</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone-alt"></i>
+                            <span>+387 60 35 39 788</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <span>skaljicinterior@gmail.com</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-clock"></i>
+                            <span>Pon-Pet: 08:00 - 16:00</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="zzzfooter-bottom">
+                <div class="zzzfooter-copyright">
+                    &copy; 2025 <span>DevHeist</span>. Sva prava zadržana.
+                </div>
+                <div class="zzzfooter-legal">
+                    <a href="#">Uslovi korištenja</a>
+                    <a href="#">Politika privatnosti</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="css/gallery.css">
+    <script src="https://www.google.com/recaptcha/api.js?render=6LeGJIwrAAAAALEqqMpAa-IGXTWuBn0kc7cEht2G"></script>
+</body>
+</html>

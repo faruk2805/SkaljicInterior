@@ -1,0 +1,925 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Škaljić Interior | Premium Panel Furniture</title>
+    <meta name="description" content="Your vision, our design - exclusive custom-made panel furniture">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/gallery.css">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="preloader-content">
+            <img src="img/logotra.png" alt="Your Logo" class="preloader-logo">
+            <div class="preloader-spinner">
+                <div class="spinner-line"></div>
+                <div class="spinner-line"></div>
+                <div class="spinner-line"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cursor Effect -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container-fluid">
+            <div class="navbar-container">
+                <!-- Logo -->
+                <a href="#" class="logo" data-cursor-scale>
+                    <img src="img/logotra.png" alt="Škaljić Interior Logo" class="logo-img">
+                </a>
+
+                <!-- Main Navigation -->
+                <div class="nav-main">
+                    <ul class="nav-links">
+                        <li class="nav-item" data-cursor-scale>
+                            <a href="#" class="nav-link active">
+                                <span class="link-text">Home</span>
+                                <span class="link-hover"></span>
+                            </a>
+                        </li>
+                        <li class="nav-item" data-cursor-scale>
+                            <a href="#about" class="nav-link">
+                                <span class="link-text">About Us</span>
+                                <span class="link-hover"></span>
+                            </a>
+                        </li>
+                        <li class="nav-item" data-cursor-scale>
+                            <a href="#usluge" class="nav-link">
+                                <span class="link-text">Services</span>
+                                <span class="link-hover"></span>
+                            </a>
+                        </li>
+                        <li class="nav-item" data-cursor-scale>
+                            <a href="#galerija" class="nav-link">
+                                <span class="link-text">Gallery</span>
+                                <span class="link-hover"></span>
+                            </a>
+                        </li>
+                        <li class="nav-item" data-cursor-scale>
+                            <a href="#kontakt" class="nav-link">
+                                <span class="link-text">Contact</span>
+                                <span class="link-hover"></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Right Side Elements -->
+                <div class="nav-right">
+                    <!-- Language Switcher -->
+                    <div class="language-switcher" data-cursor-scale>
+                        <button class="lang-btn" data-lang="bs">BS</button>
+                        <span class="lang-divider">/</span>
+                        <button class="lang-btn" data-lang="de">DE</button>
+                        <span class="lang-divider">/</span>
+                        <button class="lang-btn active" data-lang="en">EN</button>
+                    </div>
+
+                    <!-- Contact Button -->
+                    <a href="#kontakt" class="nav-contact" data-cursor-scale>
+                        <span>Contact Us</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+
+                    <!-- Mobile Menu Toggle -->
+                    <div class="nav-toggle" id="navToggle" data-cursor-scale>
+                        <span class="toggle-line"></span>
+                        <span class="toggle-line"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <div class="mobile-menu-container">
+            <ul class="mobile-nav-links">
+                <li class="mobile-nav-item">
+                    <a href="#" class="mobile-nav-link active">
+                        <span>Home</span>
+                        <i class="fas fa-chevron-right"></i>
+                    </a>
+                </li>
+                <li class="mobile-nav-item">
+                    <a href="#" class="mobile-nav-link">
+                        <span>About Us</span>
+                        <i class="fas fa-chevron-right"></i>
+                    </a>
+                </li>
+                <li class="mobile-nav-item">
+                    <a href="#usluge" class="mobile-nav-link">
+                        <span>Services</span>
+                        <i class="fas fa-chevron-right"></i>
+                    </a>
+                </li>
+                <li class="mobile-nav-item">
+                    <a href="#galerija" class="mobile-nav-link">
+                        <span>Gallery</span>
+                        <i class="fas fa-chevron-right"></i>
+                    </a>
+                </li>
+                <li class="mobile-nav-item">
+                    <a href="#kontakt" class="mobile-nav-link">
+                        <span>Contact</span>
+                        <i class="fas fa-chevron-right"></i>
+                    </a>
+                </li>
+            </ul>
+
+            <div class="mobile-menu-footer">
+                <div class="mobile-language-switcher">
+                    <button class="mobile-lang-btn" data-lang="bs">Bosnian</button>
+                    <button class="mobile-lang-btn" data-lang="de">German</button>
+                    <button class="mobile-lang-btn active" data-lang="en">English</button>
+                </div>
+
+                <div class="mobile-social-links">
+                    <a href="#" class="mobile-social-link" data-cursor-scale>
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://www.facebook.com/skaljicinterior" class="mobile-social-link" data-cursor-scale>
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/tarik-%C5%A1kalji%C4%87-033a06325/" class="mobile-social-link"
+                        data-cursor-scale target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-slider swiper">
+            <div class="swiper-wrapper">
+                <!-- Slide 1 -->
+                <div class="hero-slide swiper-slide">
+                    <div class="slide-bg" style="background-image: url('/img/poz.jpg')"></div>
+                    <div class="container-fluid">
+                        <div class="hero-content">
+                            <div class="hero-subtitle" data-swiper-parallax="-300">
+                                <span>Premium design</span>
+                            </div>
+                            <h1 class="hero-title" data-swiper-parallax="-500">
+                                <span class="title-line"><span>Your vision,</span></span>
+                                <span class="title-line"><span>our design</span></span>
+                            </h1>
+                            <div class="hero-text" data-swiper-parallax="-700">
+                                <p>Škaljić Interior creates exclusive custom-made panel furniture, combining top-notch design with precise craftsmanship.</p>
+                            </div>
+                            <div class="hero-buttons" data-swiper-parallax="-900">
+                                <a href="#" class="btn btn-primary" data-cursor-scale>
+                                    <span>About Us</span>
+                                    <i class="fas fa-arrow-right"></i>
+                                </a>
+                                <a href="#" class="btn btn-outline" data-cursor-scale>
+                                    <span>Services</span>
+                                    <i class="fas fa-play"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="hero-slide swiper-slide">
+                    <div class="slide-bg" style="background-image: url('img/poz2.jpg')"></div>
+                    <div class="container-fluid">
+                        <div class="hero-content">
+                            <div class="hero-subtitle" data-swiper-parallax="-300">
+                                <span>Luxury craftsmanship</span>
+                            </div>
+                            <h1 class="hero-title" data-swiper-parallax="-500">
+                                <span class="title-line"><span>Perfection in</span></span>
+                                <span class="title-line"><span>every detail</span></span>
+                            </h1>
+                            <div class="hero-text" data-swiper-parallax="-700">
+                                <p>Every piece of Škaljić Interior furniture is handcrafted with attention to every detail, using only the highest quality materials.</p>
+                            </div>
+                            <div class="hero-buttons" data-swiper-parallax="-900">
+                                <a href="#" class="btn btn-primary" data-cursor-scale>
+                                    <span>How We Work</span>
+                                    <i class="fas fa-arrow-right"></i>
+                                </a>
+                                <a href="#" class="btn btn-outline" data-cursor-scale>
+                                    <span>Contact</span>
+                                    <i class="fas fa-box-open"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slider Controls -->
+            <div class="hero-slider-controls">
+                <div class="swiper-pagination"></div>
+                <div class="swiper-nav">
+                    <div class="swiper-button-prev">
+                        <i class="fas fa-chevron-left"></i>
+                    </div>
+                    <div class="swiper-button-next">
+                        <i class="fas fa-chevron-right"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Hero Scroll Indicator -->
+        <div class="hero-scroll-indicator">
+            <div class="scroll-text">Scroll</div>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+    <section class="about-section" id="about">
+        <div class="container">
+            <!-- Decorative Elements -->
+            <div class="about-decoration about-dots"></div>
+            <div class="about-decoration about-line"></div>
+            <div class="premium-text-block" data-aos="fade-up" data-aos-delay="200">
+                <div class="text-reveal-container">
+                    <p class="premium-lead-text">
+                        <span class="text-line">
+                            <span class="text-mask">Dear customers, welcome to the world of elegance and comfort!</span>
+                        </span>
+                        <span class="text-line">
+                            <span class="text-mask">Škaljić Interior is your destination for endless</span>
+                        </span>
+                        <span class="text-line">
+                            <span class="text-mask">home design possibilities.</span>
+                        </span>
+                    </p>
+
+
+                    <svg width="120" height="12" viewBox="0 0 120 12" fill="none" preserveAspectRatio="none">
+                        <path d="M0 6H120" stroke="url(#gold-gradient)" stroke-width="2" stroke-dasharray="15 5"
+                            stroke-linecap="round" />
+                    </svg>
+                    <svg width="0" height="0">
+                        <linearGradient id="gold-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                            <stop offset="0%" stop-color="#c8a97e" stop-opacity="0" />
+                            <stop offset="50%" stop-color="#c8a97e" />
+                            <stop offset="100%" stop-color="#c8a97e" stop-opacity="0" />
+                        </linearGradient>
+                    </svg>
+                </div>
+            </div>
+        </div>
+
+        <div class="about-services" data-aos="fade-left">
+            <div class="services-grid">
+                <!-- Card 1 -->
+                <div class="service-card-v3">
+                    <div class="card-icon-wrapper">
+                        <div class="card-icon-circle">
+                            <i class="fas fa-pencil-ruler"></i>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Interior Design</h3>
+                        <p class="card-description">Complete interior design according to your wishes and needs</p>
+                        <a href="#" class="card-link">
+                            <span>Learn More</span>
+                            <div class="link-arrow">
+                                <i class="fas fa-arrow-right"></i>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card-decoration"></div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="service-card-v3">
+                    <div class="card-icon-wrapper">
+                        <div class="card-icon-circle">
+                            <i class="fas fa-couch"></i>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Panel Furniture</h3>
+                        <p class="card-description">Premium custom-made panel furniture</p>
+                        <a href="#" class="card-link">
+                            <span>Learn More</span>
+                            <div class="link-arrow">
+                                <i class="fas fa-arrow-right"></i>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card-decoration"></div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="service-card-v3">
+                    <div class="card-icon-wrapper">
+                        <div class="card-icon-circle">
+                            <i class="fas fa-cube"></i>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">3D Visualization</h3>
+                        <p class="card-description">Realistic 3D interior visualization before production</p>
+                        <a href="#" class="card-link">
+                            <span>Learn More</span>
+                            <div class="link-arrow">
+                                <i class="fas fa-arrow-right"></i>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card-decoration"></div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="service-card-v3">
+                    <div class="card-icon-wrapper">
+                        <div class="card-icon-circle">
+                            <i class="fas fa-tools"></i>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Production & Installation</h3>
+                        <p class="card-description">Complete process of manufacturing and installing panel furniture</p>
+                        <a href="#" class="card-link">
+                            <span>Learn More</span>
+                            <div class="link-arrow">
+                                <i class="fas fa-arrow-right"></i>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card-decoration"></div>
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+        <div class="yysection-decoration">
+            <div class="yydots-pattern"></div>
+            <div class="yyline-decoration"></div>
+        </div>
+        <div class="yytitle-divider">
+        </div>
+    </section>
+
+    <!-- Work Process -->
+    <section class="yysection-process" id="yyproces-izrade">
+        <div class="yycontainer">
+            <div class="yysection-header" data-aos="yyfade-up">
+                <span class="yysection-subtitle">Our creative process</span>
+                <h2 class="yysection-title">How We <span>Work</span></h2>
+                <div class="yytitle-divider">
+                    <svg width="150" height="8" viewBox="0 0 150 8" fill="none">
+                        <path d="M0 4H150" stroke="#C8A97E" stroke-width="2" stroke-dasharray="10 5" />
+                    </svg>
+                </div>
+            </div>
+
+            <div class="yyprocess-steps">
+                <!-- Step 1 -->
+                <div class="yyprocess-step" data-aos="yyfade-up" data-aos-delay="100">
+                    <div class="yystep-number">01</div>
+                    <div class="yystep-icon">
+                        <i class="fas fa-phone-alt"></i>
+                    </div>
+                    <div class="yystep-content">
+                        <h3>Contact Us</h3>
+                        <p>Initial conversation about your furniture needs and desires</p>
+                    </div>
+                    <div class="yystep-arrow">
+                        <i class="fas fa-chevron-right"></i>
+                    </div>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="yyprocess-step" data-aos="yyfade-up" data-aos-delay="150">
+                    <div class="yystep-number">02</div>
+                    <div class="yystep-icon">
+                        <i class="fas fa-ruler-combined"></i>
+                    </div>
+                    <div class="yystep-content">
+                        <h3>On-site Measurement</h3>
+                        <p>Precise space measurement and on-site consultations</p>
+                    </div>
+                    <div class="yystep-arrow">
+                        <i class="fas fa-chevron-right"></i>
+                    </div>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="yyprocess-step" data-aos="yyfade-up" data-aos-delay="200">
+                    <div class="yystep-number">03</div>
+                    <div class="yystep-icon">
+                        <i class="fas fa-pencil-ruler"></i>
+                    </div>
+                    <div class="yystep-content">
+                        <h3>Custom Design</h3>
+                        <p>Creation of 3D visualization and finalization of details</p>
+                    </div>
+                    <div class="yystep-arrow">
+                        <i class="fas fa-chevron-right"></i>
+                    </div>
+                </div>
+
+                <!-- Step 4 -->
+                <div class="yyprocess-step" data-aos="yyfade-up" data-aos-delay="250">
+                    <div class="yystep-number">04</div>
+                    <div class="yystep-icon">
+                        <i class="fas fa-hammer"></i>
+                    </div>
+                    <div class="yystep-content">
+                        <h3>Production & Installation</h3>
+                        <p>Handcrafted production of selected materials and professional installation</p>
+                    </div>
+                    <div class="yystep-arrow">
+                        <i class="fas fa-chevron-right"></i>
+                    </div>
+                </div>
+
+                <!-- Step 5 -->
+                <div class="yyprocess-step" data-aos="yyfade-up" data-aos-delay="300">
+                    <div class="yystep-number">05</div>
+                    <div class="yystep-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <div class="yystep-content">
+                        <h3>Warranty & Support</h3>
+                        <p>Multi-year warranty and expert support after delivery</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="yysection-decoration">
+            <div class="yydots-pattern"></div>
+            <div class="yyline-decoration"></div>
+        </div>
+        <div class="yytitle-divider">
+        </div>
+    </section>
+    <!-- Services -->
+    <section class="ysection-production" id="usluge">
+        <div class="ycontainer">
+            <div class="ysection-header" data-aos="yfade-up">
+                <h2 class="ysection-title">Our <span>Services</span></h2>
+                <div class="ytitle-divider">
+                    <svg width="120" height="8" viewBox="0 0 120 8" fill="none">
+                        <path d="M0 4H120" stroke="#C8A97E" stroke-width="2" stroke-dasharray="8 4" />
+                    </svg>
+                </div>
+            </div>
+
+            <div class="yproduction-grid">
+                <!-- Custom Kitchens -->
+                <div class="yproduction-item" data-aos="yfade-up" data-aos-delay="100">
+                    <div class="yitem-inner">
+                        <div class="yitem-icon">
+                            <i class="fas fa-utensils"></i>
+                        </div>
+                        <div class="yitem-content">
+                            <h3>Custom Kitchens</h3>
+                            <p>Premium kitchens made to individual measurements with functional details and top-quality materials</p>
+                        </div>
+                        <div class="yitem-decoration"></div>
+                        <a href="#" class="yitem-link">Learn More</a>
+                    </div>
+                </div>
+
+                <!-- Built-in Wardrobes -->
+                <div class="yproduction-item" data-aos="yfade-up" data-aos-delay="150">
+                    <div class="yitem-inner">
+                        <div class="yitem-icon">
+                            <i class="fas fa-tshirt"></i>
+                        </div>
+                        <div class="yitem-content">
+                            <h3>Built-in Wardrobes</h3>
+                            <p>Elegant and functional storage solutions that maximize available space</p>
+                        </div>
+                        <div class="yitem-decoration"></div>
+                        <a href="#" class="yitem-link">Learn More</a>
+                    </div>
+                </div>
+
+                <!-- Dressers & Cabinets -->
+                <div class="yproduction-item" data-aos="yfade-up" data-aos-delay="200">
+                    <div class="yitem-inner">
+                        <div class="yitem-icon">
+                            <i class="fas fa-archive"></i>
+                        </div>
+                        <div class="yitem-content">
+                            <h3>Dressers & Cabinets</h3>
+                            <p>Classic and modern designs combining practicality with aesthetic perfection</p>
+                        </div>
+                        <div class="yitem-decoration"></div>
+                        <a href="#" class="yitem-link">Learn More</a>
+                    </div>
+                </div>
+
+                <!-- Office Furniture -->
+                <div class="yproduction-item" data-aos="yfade-up" data-aos-delay="250">
+                    <div class="yitem-inner">
+                        <div class="yitem-icon">
+                            <i class="fas fa-briefcase"></i>
+                        </div>
+                        <div class="yitem-content">
+                            <h3>Office Furniture</h3>
+                            <p>Ergonomic solutions that boost productivity and create a professional environment</p>
+                        </div>
+                        <div class="yitem-decoration"></div>
+                        <a href="#" class="yitem-link">Learn More</a>
+                    </div>
+                </div>
+
+                <!-- Children's Rooms -->
+                <div class="yproduction-item" data-aos="yfade-up" data-aos-delay="300">
+                    <div class="yitem-inner">
+                        <div class="yitem-icon">
+                            <i class="fas fa-child"></i>
+                        </div>
+                        <div class="yitem-content">
+                            <h3>Children's Rooms</h3>
+                            <p>Safe and creative spaces that inspire imagination and growth of the youngest</p>
+                        </div>
+                        <div class="yitem-decoration"></div>
+                        <a href="#" class="yitem-link">Learn More</a>
+                    </div>
+                </div>
+
+                <!-- Bedrooms -->
+                <div class="yproduction-item" data-aos="yfade-up" data-aos-delay="350">
+                    <div class="yitem-inner">
+                        <div class="yitem-icon">
+                            <i class="fas fa-bed"></i>
+                        </div>
+                        <div class="yitem-content">
+                            <h3>Bedrooms</h3>
+                            <p>Oases of peace and comfort with premium materials and carefully designed details</p>
+                        </div>
+                        <div class="yitem-decoration"></div>
+                        <a href="#" class="yitem-link">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="ysection-decoration">
+            <div class="ydots-pattern"></div>
+            <div class="yline-decoration"></div>
+        </div>
+    </section>
+    <!-- Gallery Section -->
+    <section class="dsection-gallery" id="galerija">
+        <div class="dcontainer">
+            <div class="dsection-header">
+                <span class="dsection-subtitle">Our Work</span>
+                <h2 class="dsection-title">Project <span class="text-gold">Gallery</span></h2>
+                <div class="dtitle-divider">
+                    <svg width="180" height="10" viewBox="0 0 180 10" fill="none">
+                        <path d="M0 5H180" stroke="var(--color-secondary)" stroke-width="2" stroke-dasharray="12 6" />
+                    </svg>
+                </div>
+            </div>
+
+            <!-- Gallery Filter -->
+            <div class="dgallery-filter">
+                <button class="dfilter-btn active" data-filter="all">All Categories</button>
+                <button class="dfilter-btn" data-filter="kuhinje">Kitchens</button>
+                <button class="dfilter-btn" data-filter="kupatila">Bathrooms</button>
+                <button class="dfilter-btn" data-filter="ormari">Wardrobes</button>
+                <button class="dfilter-btn" data-filter="dekor">Decor</button>
+                <button class="dfilter-btn" data-filter="stepenista">Staircases</button>
+            </div>
+
+            <!-- Gallery Grid -->
+            <div class="dgallery-grid">
+                <!-- Kitchens Category -->
+                <div class="dgallery-item" data-category="kuhinje">
+                    <div class="dimage-wrapper">
+                        <img src="img/kuhinja2.jpg" alt="Premium kitchen" loading="lazy" class="dgallery-image">
+                        <div class="dimage-overlay">
+                            <div class="doverlay-content">
+                                <h3>Luxury Kitchen</h3>
+                                <p>Wooden elements with premium finish</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ditem-badge">Popular</div>
+                </div>
+
+                <div class="dgallery-item" data-category="kuhinje">
+                    <div class="dimage-wrapper">
+                        <img src="img/kuhinja3.jpeg" alt="Modern kitchen" loading="lazy" class="dgallery-image">
+                        <div class="dimage-overlay">
+                            <div class="doverlay-content">
+                                <h3>Modern Kitchen</h3>
+                                <p>Minimalist design</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="dgallery-item" data-category="kuhinje">
+                    <div class="dimage-wrapper">
+                        <img src="img/kuhinja4.jpeg" alt="Modern kitchen" loading="lazy" class="dgallery-image">
+                        <div class="dimage-overlay">
+                            <div class="doverlay-content">
+                                <h3>Modern Kitchen</h3>
+                                <p>Minimalist design</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="dgallery-item" data-category="kuhinje">
+                    <div class="dimage-wrapper">
+                        <img src="img/kuhinja5.jpeg" alt="Modern kitchen" loading="lazy" class="dgallery-image">
+                        <div class="dimage-overlay">
+                            <div class="doverlay-content">
+                                <h3>Modern Kitchen</h3>
+                                <p>Minimalist design</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bathrooms Category -->
+                <div class="dgallery-item" data-category="kupatila">
+                    <div class="dimage-wrapper">
+                        <img src="img/kupaona.jpg" alt="Premium bathroom" loading="lazy" class="dgallery-image">
+                        <div class="dimage-overlay">
+                            <div class="doverlay-content">
+                                <h3>Luxury Bathroom</h3>
+                                <p>Woodwork</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Wardrobes Category -->
+                <div class="dgallery-item" data-category="ormari">
+                    <div class="dimage-wrapper">
+                        <img src="img/ormar.jpg" alt="Built-in wardrobe" loading="lazy" class="dgallery-image">
+                        <div class="dimage-overlay">
+                            <div class="doverlay-content">
+                                <h3>Wardrobe</h3>
+                                <p>Customized to space</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dgallery-item" data-category="ormari">
+                    <div class="dimage-wrapper">
+                        <img src="img/ormar2.jpeg" alt="Built-in wardrobe" loading="lazy" class="dgallery-image">
+                        <div class="dimage-overlay">
+                            <div class="doverlay-content">
+                                <h3>Wardrobe</h3>
+                                <p>Customized to space</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="dgallery-item" data-category="ormari">
+                    <div class="dimage-wrapper">
+                        <img src="img/ormar3.jpeg" alt="Built-in wardrobe" loading="lazy" class="dgallery-image">
+                        <div class="dimage-overlay">
+                            <div class="doverlay-content">
+                                <h3>Wardrobe</h3>
+                                <p>Customized to space</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Decor Category -->
+                <div class="dgallery-item" data-category="dekor">
+                    <div class="dimage-wrapper">
+                        <img src="img/tv.jpg" alt="Wooden panels" loading="lazy" class="dgallery-image">
+                        <div class="dimage-overlay">
+                            <div class="doverlay-content">
+                                <h3>Wooden Panels</h3>
+                                <p>Decorative wall treatment</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Staircases Category -->
+                <div class="dgallery-item" data-category="stepenista">
+                    <div class="dimage-wrapper">
+                        <img src="img/stepeniste.jpg" alt="Wooden staircase" loading="lazy" class="dgallery-image">
+                        <div class="dimage-overlay">
+                            <div class="doverlay-content">
+                                <h3>Wooden Staircase</h3>
+                                <p>Handcrafted details</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ditem-badge">New</div>
+                </div>
+            </div>
+
+            <!-- Load More Button -->
+            <div class="dload-more-container">
+                <button class="dload-more-btn">Load More Projects</button>
+            </div>
+        </div>
+
+        <!-- Fullscreen Image Viewer -->
+        <div class="dfullscreen-viewer">
+            <span class="dclose-btn">&times;</span>
+            <img class="dfullscreen-image" src="" alt="">
+            <div class="dimage-caption"></div>
+            <div class="dimage-nav">
+                <button class="dnav-btn dprev-btn">&#10094;</button>
+                <button class="dnav-btn dnext-btn">&#10095;</button>
+            </div>
+        </div>
+
+        <!-- Section Decoration -->
+        <div class="dsection-decoration">
+            <div class="ddots-pattern"></div>
+            <div class="dline-decoration"></div>
+        </div>
+    </section>
+    <!-- Contact -->
+    <section class="yyysection-contact" id="kontakt">
+        <div class="yyycontainer">
+            <div class="yyysection-header">
+                <span class="yyysection-subtitle">Contact Us</span>
+                <h2 class="yyysection-title">Custom <span>Panel Furniture!</span></h2>
+                <div class="yyytitle-divider">
+                    <svg width="180" height="10" viewBox="0 0 180 10" fill="none">
+                        <path d="M0 5H180" stroke="#C8A97E" stroke-width="2" stroke-dasharray="12 6" />
+                    </svg>
+                </div>
+            </div>
+
+            <div class="yyycontact-grid">
+                <div class="yyycontact-info">
+                    <div class="yyyinfo-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <h3>Phone</h3>
+                        <a href="tel:+387603539788">060 35 39 788</a>
+                    </div>
+                    <div class="yyyinfo-item">
+                        <i class="fas fa-envelope"></i>
+                        <h3>Email</h3>
+                        <a href="mailto:skaljicinterior@gmail.com">skaljicinterior@gmail.com</a>
+                    </div>
+                    <div class="yyyinfo-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h3>Location</h3>
+                        <p>Zmaj od Bosne, Buzim, Bosnia and Herzegovina</p>
+                    </div>
+                    <div class="yyyinfo-item">
+                        <i class="fas fa-lightbulb"></i>
+                        <h3>Motto</h3>
+                        <p>Your vision, our design!</p>
+                    </div>
+                </div>
+
+                <div class="yyycontact-form">
+                    <form id="yyycontactForm" action="sendmail.php" method="POST">
+                        <div class="yyyform-group">
+                            <input type="text" name="name" id="name" required>
+                            <label for="name">Full Name*</label>
+                        </div>
+                        <div class="yyyform-group">
+                            <input type="email" name="email" id="email" required>
+                            <label for="email">Email Address*</label>
+                        </div>
+                        <div class="yyyform-group">
+                            <input type="tel" name="phone" id="phone">
+                            <label for="phone">Phone</label>
+                        </div>
+                        <div class="yyyform-group">
+                            <textarea name="message" id="message" rows="5" required></textarea>
+                            <label for="message">Message*</label>
+                        </div>
+                        <input type="hidden" id="g-recaptcha-response" name="g-recaptcha-response">
+                        <button type="submit" class="yyyform-button">
+                            <span>Send Message</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                        <div class="yyyform-status"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="yysection-decoration">
+            <div class="yydots-pattern"></div>
+            <div class="yyline-decoration"></div>
+        </div>
+        <div class="yytitle-divider">
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="zzzsection-footer">
+        <div class="zzzfooter-top-border"></div> <!-- Line above footer -->
+        <div class="zzzfooter-wave">
+            <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path
+                    d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"
+                    opacity=".25" fill="#c8a97e"></path>
+                <path
+                    d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z"
+                    opacity=".5" fill="#c8a97e"></path>
+                <path
+                    d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z"
+                    fill="#c8a97e"></path>
+            </svg>
+        </div>
+
+        <div class="zzzcontainer">
+            <div class="zzzfooter-grid">
+                <div class="zzzfooter-col zzzfooter-about">
+                    <div class="zzzfooter-logo">
+                        <span class="zzzlogo-text">ŠKALJIĆ INTERIOR</span>
+                        <span class="zzzlogo-dot">.</span>
+                    </div>
+                    <p class="zzzfooter-about-text">
+                        Premium custom-made panel furniture. Your vision, our design - together we create perfect spaces.
+                    </p>
+                    <div class="zzzsocial-links">
+                        <a href="https://www.instagram.com/skaljicinterior/" class="zzzsocial-link" data-cursor-scale><i
+                                class="fab fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/skaljicinterior" class="zzzsocial-link" data-cursor-scale><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.linkedin.com/in/tarik-%C5%A1kalji%C4%87-033a06325/" class="zzzsocial-link"
+                            data-cursor-scale target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+                <div class="zzzfooter-col zzzfooter-links">
+                    <h3 class="zzzfooter-title">Quick Links</h3>
+                    <ul class="zzzfooter-list">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#usluge">Services</a></li>
+                        <li><a href="#galerija">Gallery</a></li>
+                        <li><a href="#kontakt">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="zzzfooter-col zzzfooter-services">
+                    <h3 class="zzzfooter-title">Services</h3>
+                    <ul class="zzzfooter-list">
+                        <li><a href="#">Custom Kitchens</a></li>
+                        <li><a href="#">Built-in Wardrobes</a></li>
+                        <li><a href="#">Bedrooms</a></li>
+                        <li><a href="#">Children's Rooms</a></li>
+                        <li><a href="#">Office Furniture</a></li>
+                    </ul>
+                </div>
+
+                <div class="zzzfooter-col zzzfooter-contact">
+                    <h3 class="zzzfooter-title">Contact</h3>
+                    <ul class="zzzfooter-contact-list">
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Zmaj od Bosne, Buzim, BiH</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone-alt"></i>
+                            <span>+387 60 35 39 788</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <span>skaljicinterior@gmail.com</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-clock"></i>
+                            <span>Mon-Fri: 08:00 - 16:00</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="zzzfooter-bottom">
+                <div class="zzzfooter-copyright">
+                    &copy; 2025 <span>DevHeist</span>. All Rights Reserved.
+                </div>
+                <div class="zzzfooter-legal">
+                    <a href="#">Terms of Use</a>
+                    <a href="#">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="css/gallery.css">
+    <!-- Google reCAPTCHA API -->
+    <script src="https://www.google.com/recaptcha/api.js?render=6LeGJIwrAAAAALEqqMpAa-IGXTWuBn0kc7cEht2G"></script>
+</body>
+
+</html>

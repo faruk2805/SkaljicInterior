@@ -1,0 +1,328 @@
+/* ==========================================================================
+   YYY GALLERY SECTION STYLES
+   ========================================================================== */
+.yyysection-gallery {
+    position: relative;
+    padding: 100px 0;
+    background-color: #0f0f0f;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.yyycontainer {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 20px;
+    position: relative;
+    z-index: 3;
+}
+
+/* Header Styles */
+.yyysection-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.yyysection-subtitle {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: #c8a97e;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.yyysection-subtitle::after {
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 2px;
+    background: #c8a97e;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.yyysection-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.yyysection-title span {
+    color: #c8a97e;
+    position: relative;
+}
+
+.yyytitle-divider {
+    margin-top: 20px;
+}
+
+/* Gallery Grid Layout */
+.yyygallery-grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(3, 220px);
+    gap: 15px;
+    margin-bottom: 50px;
+}
+
+.yyygallery-item {
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: all 0.5s ease;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    cursor: pointer;
+}
+
+/* Item Types */
+.yyyitem-main {
+    grid-column: 1 / span 7;
+    grid-row: 1 / span 2;
+}
+
+.yyyitem-wide {
+    grid-column: 8 / span 5;
+    grid-row: 1 / span 1;
+}
+
+.yyyitem-vertical {
+    grid-column: span 4;
+    grid-row: span 1;
+}
+
+/* Image Styles */
+.yyyimage-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.yyyimage-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.yyyimage-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, rgba(15,15,15,0.8), rgba(15,15,15,0.3));
+    z-index: 1;
+}
+
+/* Content Styles */
+.yyyitem-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 25px;
+    z-index: 2;
+}
+
+.yyyitem-content h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    font-weight: 600;
+    color: #ffffff;
+    margin-bottom: 0;
+}
+
+.yyyitem-main .yyyitem-content h3 {
+    font-size: 28px;
+}
+
+/* Badges */
+.yyyitem-badge {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: #c8a97e;
+    color: #121212;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 5px 12px;
+    border-radius: 20px;
+    z-index: 3;
+}
+
+/* Fullscreen Viewer */
+.yyyfullscreen-viewer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(15,15,15,0.95);
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+}
+
+.yyyfullscreen-viewer.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.yyyfullscreen-image {
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: contain;
+}
+
+.yyyclose-btn {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    color: #fff;
+    font-size: 40px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.yyyclose-btn:hover {
+    color: #c8a97e;
+}
+
+.yyyimage-caption {
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    font-family: 'Playfair Display', serif;
+    font-size: 24px;
+}
+
+/* Decorations */
+.yyysection-decoration {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 2;
+}
+
+.yyydots-pattern {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(circle, rgba(200,169,126,0.1) 1px, transparent 1px);
+    background-size: 15px 15px;
+    bottom: -150px;
+    right: -150px;
+    opacity: 0.3;
+}
+
+.yyyline-decoration {
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(200,169,126,0.2), transparent);
+    top: 60%;
+    left: 0;
+}
+
+/* Hover Effects */
+.yyygallery-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(200,169,126,0.1);
+}
+
+.yyygallery-item:hover .yyyimage-wrapper img {
+    transform: scale(1.05);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1200px) {
+    .yyygallery-grid {
+        grid-template-rows: repeat(3, 180px);
+    }
+}
+
+@media (max-width: 992px) {
+    .yyygallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+    }
+    
+    .yyyitem-main,
+    .yyyitem-wide,
+    .yyyitem-vertical {
+        grid-column: span 2;
+        grid-row: span 1;
+        height: 300px;
+    }
+    
+    .yyyitem-main {
+        height: 400px;
+    }
+}
+
+@media (max-width: 768px) {
+    .yyysection-title {
+        font-size: 36px;
+    }
+    
+    .yyygallery-grid {
+        gap: 10px;
+    }
+    
+    .yyyitem-content {
+        padding: 15px;
+    }
+    
+    .yyyitem-content h3 {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 576px) {
+    .yyysection-gallery {
+        padding: 70px 0;
+    }
+    
+    .yyygallery-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .yyyitem-main,
+    .yyyitem-wide,
+    .yyyitem-vertical {
+        height: 250px;
+    }
+    
+    .yyyfullscreen-image {
+        max-width: 95%;
+        max-height: 80%;
+    }
+    
+    .yyyclose-btn {
+        top: 15px;
+        right: 15px;
+        font-size: 30px;
+    }
+    
+    .yyyimage-caption {
+        font-size: 18px;
+        bottom: 15px;
+    }
+}
